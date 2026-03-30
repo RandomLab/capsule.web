@@ -1,0 +1,27 @@
+{% extends "partials/base.html" %}
+
+{% block main %}
+        <!-- contenu -->
+        <main class="main">
+
+            {% for projet in collections.type %}
+
+                {{ projet | debugger}}
+
+                {% if projet.data.publish %}
+
+                <a href="{{ projet.url }}">
+                    <figure class="image">
+                        <img
+                            src="images/{{ projet.data.vignette }}"
+                            alt="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                        />
+                        <figcaption>{{ projet.data.title }}</figcaption>
+                    </figure>
+                </a>
+                {% endif %}
+
+            {% endfor %}
+
+        </main>
+{% endblock %}

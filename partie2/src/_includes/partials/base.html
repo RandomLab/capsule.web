@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Portfolio</title>
+
+        <link rel="stylesheet" href="{{'/assets/css/reset.css' | url }}" />
+        
+        <!-- font google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Datatype:wght@100..900&display=swap" rel="stylesheet">
+
+        
+        <link rel="stylesheet" href="{{'/assets/css/style.css' | url }}" />
+        
+        
+        <script defer src="{{'/assets/js/main.js' | url }}"></script>
+    </head>
+
+    <body>
+             <!-- container -->
+    <div class="container">
+
+
+        <!-- header -->
+        <header class="header">
+
+            <div class="titre">
+                <a href="/">Porfolio</a>
+            </div>
+
+            <nav class="menu">
+                 <svg
+                    class="burger"
+                    width="30"
+                    height="30"
+                    viewBox="0 2 10 15"
+                    version="1.1"
+                    id="svg1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:svg="http://www.w3.org/2000/svg">
+                    <defs
+                        id="defs1" />
+                    <g
+                        inkscape:label="Calque 1"
+                        inkscape:groupmode="layer"
+                        id="layer1">
+                    <path
+                        style="stroke-width:1.05833328;stroke-dasharray:none;stroke-dashoffset:1.27;stroke-opacity:1"
+                        d="M 1.8398234,4 H 11.673516"
+                        id="path1" />
+                    <path
+                        style="stroke-width:1.05833328;stroke-dasharray:none;stroke-dashoffset:1.27;stroke-opacity:1"
+                        d="M 1.8398234,6.4 H 11.673516"
+                        id="path1" />
+                    <path
+                        style="stroke-width:1.05833328;stroke-dasharray:none;stroke-dashoffset:1.27;stroke-opacity:1"
+                        d="M 1.8398234,9 H 11.673516"
+                        id="path1-5" />
+                    </g>
+                </svg>
+            </nav>
+
+        </header>
+
+        {% block main %}
+
+        {% endblock %}
+
+    </body>
+</html>

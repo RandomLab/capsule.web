@@ -1,0 +1,91 @@
+:root {
+    --main-marge : 10px;
+    --main-font: "Datatype";
+}
+
+.hide {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* global */
+.container {
+    padding: var(--main-marge);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font), monospace;
+    line-height: 1.3;
+}
+
+
+.modal {
+    z-index: 5;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: var(--main-font), monospace;
+    font-size: 3rem;
+}
+
+.modal .menu {
+    padding: var(--main-marge);
+    line-height: 1.3;
+}
+
+.modal .cross {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: var(--main-marge);
+    cursor: pointer;
+}
+
+.modal svg {
+    stroke: white;
+    stroke-width: 3;
+    /* width: 30px; */
+}
+
+/* header */
+.container .header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin: 0 0 var(--main-marge) 0;
+}
+
+.container .header .menu svg {
+    stroke: black;
+    cursor: pointer;
+}
+
+
+/* contenu */
+.container .main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.container .main .image img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* mobile */
+
+@media only screen and (min-width: 1px) and (max-width: 900px) {
+
+
+
+}
