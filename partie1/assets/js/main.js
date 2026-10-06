@@ -5,12 +5,13 @@ function showModal() {
   const menuModal = document.querySelector(".modal");
 
   btnBurger.addEventListener("click", function (e) {
-    menuModal.classList.add("show");
+    //menuModal.classList.add("show");
     menuModal.classList.remove("hide");
   });
 
   btnCross.addEventListener("click", function (e) {
     menuModal.classList.add("hide");
+    //menuModal.classList.remove("show");
   });
 
 }
